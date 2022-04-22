@@ -80,6 +80,41 @@ public class panel extends JPanel implements ActionListener{
         bx = (int) (bx + bxVel);
         by = (int) (by + byVel);
 
+        if(xVel > 100){
+            xVel=xVel*0.5;
+        }
+        if(xVel < -100){
+            xVel=xVel*0.5;
+        }
+
+
+
+        if(yVel > 100){
+            yVel=yVel*0.5;
+        }
+        if(yVel < -100){
+            yVel=yVel*0.5;
+        }
+
+
+        //Ball
+
+        if(bxVel > 100){
+            bxVel=bxVel*0.5;
+        }
+        if(xVel < -100){
+            bxVel=bxVel*0.5;
+        }
+
+
+
+        if(byVel > 100){
+            byVel=byVel*0.5;
+        }
+        if(byVel < -100){
+            byVel=byVel*0.5;
+        }
+
         repaint();
         
     }
